@@ -1,0 +1,154 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html{
+    font-size: 16px;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+}
+
+/* CUSTOM STYLES */
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+    width: 100%;
+}
+/* MY RESET */
+.width-full{
+    width: 100%;
+}
+.padding{
+    padding: 2rem 0;
+}
+.text-center{
+    text-align: center;
+    display: inline-block;
+}
+
+/* FLEX */
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.flex-60{
+    flex: 0 1 50%;
+}
+.flex-30{
+    flex: 0 1 30%;
+}
+.justify-content{
+    justify-content: flex-start;
+}
+
+/* HEADER */
+.nav-menu a{
+    text-decoration: none;
+    margin-left:  2rem;
+    color: black;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+/* HERO SECTION */
+.hero-section h1{
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 500;
+}
+.hero-section a{
+    font-size: 0.8rem;
+    background-color: #006241;
+    color: white;
+    padding: 0.7rem 1rem;
+    border-radius: 25px;
+    text-decoration: none;
+}
+.hero-section p{
+    margin: 1.2rem 0;
+    color: rgba(0,0,0,0.7);
+}
+.strong{
+    color: #006241;
+    font-weight: 700;
+}
+.thumb-section img:hover{
+    transform: translateY(-15px);
+}
+.thumb-section{
+    position: absolute;
+    letter-spacing: 50%;
+    bottom: 50px;
+    transform: translateX(-10%);
+    display: flex;
+    bottom: -20%;
+    left: 30%;
+    cursor: pointer;
+}
+.circle{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #017143;
+    clip-path: circle(700px at right 700px);
+    z-index: -1;
+}

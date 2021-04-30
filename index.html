@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="assets/stylesheet/style.css">
+
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="circle"></div>
+    <header class="container">
+        <div class="padding flex">
+            <div>
+                <img class="width-full" src="assets/media/logo_tcm87-366_w1024_n.png" alt="">
+            </div>
+            <nav>
+                <ul class="flex nav-menu">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Menu</a>
+                    </li>
+                    <li>
+                        <a href="#">What's New</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        
+        <!-- HERO SECTION -->
+        <section class="container">
+            <div class="flex">
+                <article class="flex-60 hero-section">
+                    <h1>
+                        It's not just Coffee<br> It's <strong class="strong">Starbucks</strong>
+                    </h1>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo porro quidem quas provident?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae enim quibusdam beatae!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ex debitis quod.
+                        Lorem, ipsum dolor.
+                    </p>
+                    <a class="btn" href="#">
+                        LEARN MORE
+                    </a>
+                </article>
+                <div class="flex-30">
+                    <img class="width-full starbucks" src="assets/media/img1.png" alt="Coffee">
+                </div>
+            </div>
+            <div class="flex justify-content  thumb-section">
+                <div>
+                    <img class="width-full" src="assets/media/thumb1.png" onclick="imgSlider('assets/media/img1.png');changeCircleColor('#017143')" alt="">
+                </div>
+                <div>
+                    <img class="width-full" src="assets/media/thumb2.png" onclick="imgSlider('assets/media/img2.png');changeCircleColor('#eb7495')" alt="">
+                </div>
+                <div>
+                    <img class="width-full" src="assets/media/thumb3.png" onclick="imgSlider('assets/media/img3.png');changeCircleColor('#d752b1')" alt="">
+                </div>
+            </div>
+        </section>
+        <script type="text/javascript">
+            function imgSlider(anything){
+                document.querySelector('.starbucks').src = anything;
+            }
+            function changeCircleColor(color){
+                const circle = document.querySelector('.circle');
+                circle.style.background = color;
+            }
+        </script>
+    </main>
+</body>
+</html>
